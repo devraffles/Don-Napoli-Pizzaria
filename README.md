@@ -2,7 +2,7 @@
 Esse é um projeto de Piazzaria, tem o objetivo estudar os conteudos com base no curso da Udemy Projeto Completo NodeJS, React, React Native, TypeScript.
 
 <div align="center">
-  <img alt="Logo Don-Napoli-Pizzaria" src="" heght="50px"/>
+  <img alt="Logo Don-Napoli-Pizzaria" src="https://github.com/rafaelnator/Don-Napoli-Pizzaria/blob/main/IMG-README/Logo_Completa.png" heght="50px"/>
 </div>
 
 # Objetivo
