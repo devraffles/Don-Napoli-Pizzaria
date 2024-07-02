@@ -1,9 +1,9 @@
-import { Router, Request, Response } from 'express';
+import { Router } from 'express';
+
+import { CreateUserControllers } from './controllers/user/CreateUserControllers';
 
 const router = Router();
 
-router.get('/ping', (req: Request, res: Response) => {
-    return res.json({ ping: true });
-});
+router.post('/users', new CreateUserControllers().handle);
 
 export { router };
