@@ -1,4 +1,16 @@
 -- CreateTable
+CREATE TABLE "users" (
+    "id" TEXT NOT NULL,
+    "name" TEXT NOT NULL,
+    "email" TEXT NOT NULL,
+    "password" TEXT NOT NULL,
+    "created_at" TIMESTAMP(3) DEFAULT CURRENT_TIMESTAMP,
+    "update_at" TIMESTAMP(3) DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT "users_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
 CREATE TABLE "categories" (
     "id" TEXT NOT NULL,
     "name" TEXT NOT NULL,
@@ -14,7 +26,7 @@ CREATE TABLE "products" (
     "name" TEXT NOT NULL,
     "price" TEXT NOT NULL,
     "description" TEXT NOT NULL,
-    "baner" TEXT NOT NULL,
+    "banner" TEXT NOT NULL,
     "created_at" TIMESTAMP(3) DEFAULT CURRENT_TIMESTAMP,
     "update_at" TIMESTAMP(3) DEFAULT CURRENT_TIMESTAMP,
     "category_id" TEXT NOT NULL,
