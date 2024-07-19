@@ -1,4 +1,4 @@
-# Don-Napoli-Pizzaria API
+# Don-Nápoli-Pizzaria API
 
 Esta pasta engloba todos os códigos relacionados à API do sistema do Don-Napoli-Pizzaria.
 
