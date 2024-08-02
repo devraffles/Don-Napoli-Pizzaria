@@ -16,6 +16,11 @@
     flex-direction: column;
     padding: 2rem 1.5rem;
 
+    h1{
+        color: var(--white);
+        padding-bottom: 1rem;
+    }
+
     form{
         width: 90%;
         display: flex;
@@ -35,8 +40,8 @@
 }
 
 .logoImg{
-    width: 30rem;
-    height: 9rem;
+    width: 25rem;
+    height: 7rem;
 }
 
 @media (max-width: 620px) {
