@@ -54,7 +54,7 @@ router.get('/ping', (req: Request, res: Response) => {
 
 
 //|---------------------------- ROTAS DO USUARIO  ------------------------------------------------------|
-router.post('/users', new CreateUserController().handle);
+router.post('/user', new CreateUserController().handle);
 
 router.post('/session', new AuthUserController().handle);
 
