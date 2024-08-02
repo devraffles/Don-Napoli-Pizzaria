@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet"/>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="./styles/output.css">
+
+        <title>Don Nápoli Pizzaria - Cardápio</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="w-full h-[420px] bg-gray-900 bg-home bg-cover bg-center">
+            <div class="w-full h-full flex flex-col justify-center items-center">
+                <img 
+                    src="./assets/pizza.png" 
+                    alt="Logo Don Nápoli Pizzaria" 
+                    class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+                />
+
+                <h1 class="text-4xl mt-4 mb-2 font-bold italic text-white">
+                    Don Nápoli Pizzaria
+                </h1>
+
+                <span class="text-white font-medium">Rua Dev 25, Campo Grande, SP</span>
+
+                <div class="text-white bg-green-400 px-4 py-1 rounded-lg mt-5" id="date-span">
+                    <span>Seg á Dom - 18:00 as - 22:00</span>
+                </div>
+            </div>
+        </header>
+        <!-- Header -->
+
+        <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+            Conheça nosso cardápio
+        </h2>
+
+        <!-- Menu -->
+        <div id="menu">
+            <!-- Grid - Pizzas -->
+            <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+                <!-- Produto -->
+                <div class="flex gap-2 justify-center items-center w-full">
+                    <img
+                        src="./assets/Pizza-Napolitana.jpg"
+                        alt="Pizza Napolitana"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                    />
+
+                    <div class="w-full">
+                        <!-- Nome -->
+                        <p class="font-bold">Pizza Napolitana</p>
+                        <!-- Descrição -->
+                        <p class="text-sm">
+                            Pizza Napolitana: a Margherita, 
+                            coberta com molho de tomate
+                        </p>
+
+                        <div class="flex items-center justify-between gap-2 mt-3">
+                            <!-- Preço -->
+                            <p class="font-bold text-lg">59.99</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Pizza Napolitana"
+                                data-price="59.99"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                            <!-- Preço -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto -->
+
+                <!-- Produto -->
+                <div class="flex gap-2 justify-center items-center w-full">
+                    <img
+                        src="./assets/Pizza-Marguerita.jpg"
+                        alt="Pizza Marguerita"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                    />
+
+                    <div class="w-full">
+                        <!-- Nome -->
+                        <p class="font-bold">Pizza Marguerita</p>
+                        <!-- Descrição -->
+                        <p class="text-sm">
+                            Pizza Marguerita: a Margherita, 
+                            coberta com molho de tomate
+                        </p>
+
+                        <div class="flex items-center justify-between gap-2 mt-3">
+                            <!-- Preço -->
+                            <p class="font-bold text-lg">49.99</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Pizza Marguerita"
+                                data-price="49.99"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                            <!-- Preço -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto -->
+                
+                <!-- Produto -->
+                <div class="flex gap-2 justify-center items-center w-full">
+                    <img
+                        src="./assets/Pizza-Calabreza.jpg"
+                        alt="Pizza Calabreza"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                    />
+
+                    <div class="w-full">
+                        <!-- Nome -->
+                        <p class="font-bold">Pizza Calabreza</p>
+                        <!-- Descrição -->
+                        <p class="text-sm">
+                            Pizza Calabreza: a Margherita, 
+                            coberta com molho de tomate
+                        </p>
+
+                        <div class="flex items-center justify-between gap-2 mt-3">
+                            <!-- Preço -->
+                            <p class="font-bold text-lg">44.99</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Pizza Calabreza"
+                                data-price="44.99"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                            <!-- Preço -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto -->
+
+                <!-- Produto -->
+                <div class="flex gap-2 justify-center items-center w-full">
+                    <img
+                        src="./assets/Pizza-de-frango-com-catupiry.jpg"
+                        alt="Pizza Frango com Catupiry"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                    />
+
+                    <div class="w-full">
+                        <!-- Nome -->
+                        <p class="font-bold">Pizza Frango com Catupiry</p>
+                        <!-- Descrição -->
+                        <p class="text-sm">
+                            Pizza Frango com Catupiry: a Margherita, 
+                            coberta com molho de tomate
+                        </p>
+
+                        <div class="flex items-center justify-between gap-2 mt-3">
+                            <!-- Preço -->
+                            <p class="font-bold text-lg">59.99</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Pizza Frango com Catupiry"
+                                data-price="59.99"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                            <!-- Preço -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto -->
+
+                <!-- Produto -->
+                <div class="flex gap-2 justify-center items-center w-full">
+                    <img
+                        src="./assets/Pizza-vegetariana.jpg"
+                        alt="Pizza Vegetariana"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                    />
+
+                    <div class="w-full">
+                        <!-- Nome -->
+                        <p class="font-bold">Pizza Vegetariana</p>
+                        <!-- Descrição -->
+                        <p class="text-sm">
+                            Pizza Vegetariana: a Margherita, 
+                            coberta com molho de tomate
+                        </p>
+
+                        <div class="flex items-center justify-between gap-2 mt-3">
+                            <!-- Preço -->
+                            <p class="font-bold text-lg">54.99</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Pizza Vegetariana"
+                                data-price="54.99"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                            <!-- Preço -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto -->
+            </main>
+
+            <div class="mx-auto max-w-7xl px-2 my-2">
+                <h2 class="font-bold text-3xl">
+                    Bebidas
+                </h2>
+            </div>
+            <!-- Grid - Bebidas -->
+            <div id="menu" class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+                <!-- Produto Bebida -->
+                <div class="flex gap-2 w-full">
+                    <img
+                        src="./assets/refri-1.png"
+                        alt="Coco lata"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                    />
+
+                    <div class="w-full">
+                        <!-- Nome -->
+                        <p class="font-bold">Coco lata</p>
+
+                        <div class="flex items-center justify-between gap-2 mt-3">
+                            <!-- Preço -->
+                            <p class="font-bold text-lg">4.99</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Coco lata"
+                                data-price="4.99"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                            <!-- Preço -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto Bebida -->
+                 
+                <!-- Produto Bebida -->
+                <div class="flex gap-2 w-full">
+                    <img
+                        src="./assets/refri-3.png"
+                        alt="Coco Zero lata"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                    />
+
+                    <div class="w-full">
+                        <!-- Nome -->
+                        <p class="font-bold">Coco Zero lata</p>
+
+                        <div class="flex items-center justify-between gap-2 mt-3">
+                            <!-- Preço -->
+                            <p class="font-bold text-lg">4.99</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Coco Zero lata"
+                                data-price="4.99"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                            <!-- Preço -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto Bebida -->
+
+                <!-- Produto Bebida -->
+                <div class="flex gap-2 w-full">
+                    <img
+                        src="./assets/refri-2.png"
+                        alt="Guaraná lata"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                    />
+
+                    <div class="w-full">
+                        <!-- Nome -->
+                        <p class="font-bold">Guaraná lata</p>
+
+                        <div class="flex items-center justify-between gap-2 mt-3">
+                            <!-- Preço -->
+                            <p class="font-bold text-lg">4.99</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Guaraná lata"
+                                data-price="4.99"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                            <!-- Preço -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto Bebida -->
+            </div>
+            <!-- Grid - Bebidas -->
+        </div>
+        <!-- Menu -->
+
+        <!-- Modal -->
+         <div 
+            id="cart-modal"
+            class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+        >
+            <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+                <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
+
+                <div id="cart-items" class="flex justify-between mb-2 flex-col">
+
+                </div>
+
+                <p class="font-bold">
+                    Total: <span id="cart-total">0.00</span>
+                </p>
+
+                <p class="font-bold mt-4">
+                    Endereço de entrega:
+                </p>
+
+                <input 
+                    type="text" 
+                    placeholder="Digite seu endereço completo..."
+                    id="address"
+                    class="w-full border-2 p-1 rounded-md my-1"
+                />
+
+                <p class="font-bold text-red-500 hidden" id="address-warn">
+                    Digite seu endereço completo!
+                </p>
+
+                <div class="flex items-center justify-between mt-4 w-full">
+                    <button id="close-modal-btn">Fechar</button>
+                    <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded-md">Finalizar Pedido</button>
+                </div>
+            </div>
+         </div>
+        <!-- Modal -->
+
+        <!-- Footer -->
+         <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+            <button 
+                class="flex items-center gap-2 text-white font-bold"
+                id="cart-btn"
+            >
+                (<span id="cart-count" class="">0</span>)
+                    Ver carrinho
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+         </footer>
+        <!-- Footer -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
