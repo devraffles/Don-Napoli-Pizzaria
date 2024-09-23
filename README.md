@@ -6,7 +6,7 @@ Esse é um projeto de Piazzaria, tem o objetivo de demonstrar meus conhecimento 
 </div>
 
 # Objetivo
-A proposta desse projeto é simular uma pizzaria com App, Site e até mesmo uma DahsBord. Porém terá App e Site quanto para cliente e quanto para a própria pizzaria. 
+A proposta desse projeto é simular uma pizzaria com App e Site. Porém terá App e Site quanto para cliente e quanto para a própria pizzaria. 
 
 # Feito por:
 Rafael Giorgi - Fullstack
