@@ -6,7 +6,6 @@ Esse é um projeto de Piazzaria, tem o objetivo de demonstrar meus conhecimento 
 </div>
 
 # Objetivo
-O objetivo desse projeto é simular uma pizzaria onde utilizamos um App e um Site para pode auxiliar adiministração dos pedidos da pizzaria. O App servira para os garçons anotar os pedidos e enviar para a a cozinha, já na cozinha terá um computador que tem acesso aos pedidos da pizzaria e cadastros de produtos e categorias, através do site.
-
+O objetivo desse projeto é simular uma pizzaria onde utilizamos um App e um Site para poder auxiliar na administração dos pedidos da pizzaria. O App servirá para os garçons anotar os pedidos e enviar para a cozinha, já na cozinha terá um computador que tem acesso aos pedidos da pizzaria e cadastros de produtos e categorias, através do site.
 # Feito por:
 Rafael Giorgi - Fullstack
